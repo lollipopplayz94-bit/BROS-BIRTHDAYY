@@ -1023,3 +1023,11 @@ body {
     color: white;
     z-index: 10000000000000000;
 }
+.corner-cat{
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  width: 120px;
+  z-index: 1000;
+  pointer-events: none;
+}
