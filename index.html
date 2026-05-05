@@ -18,15 +18,11 @@
         integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
 </head>
 
-<body><audio id="bg-music" loop>
+<body>
+    <audio id="bg-music" loop preload="auto">
   <source src="images/song.mp3" type="audio/mpeg">
 </audio>
-
-<script>
-  window.addEventListener('click', () => {
-    document.getElementById('bg-music').play();
-  }, { once: true });
-</script>
+    
     <div id="wrapper">
         <div class="flag__birthday">
             <img src="./images/1.png" alt="" width="350" class="flag__left">
@@ -198,6 +194,7 @@ Have the happiest birthday ever 💛✨
     var intervalContent;
     var intervalTitle;
     $("#btn__letter").on("click", function () {
+        document.getElementById("bg-music").play();
         $(".box__letter").slideDown()
         setTimeout(function () {
             $(".letter__border").slideDown();
