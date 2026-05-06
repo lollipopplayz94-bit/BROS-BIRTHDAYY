@@ -1025,7 +1025,7 @@ body {
 }
 .corner-cat{
   position: fixed;
-  bottom: 20px;
+  bottom: 30px;
   left: 60px;
   width: 120px;
   z-index: 1000;
